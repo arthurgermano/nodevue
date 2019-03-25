@@ -14,7 +14,7 @@ docker container run --rm -it --network host -v $(pwd):/app arthurgermano/nodevu
 THEN
 Inside the container you have access to your present work directory just run your commands!
 
-# OBS: Is set with PRIVOXY 
+# OBS: set with PRIVOXY 
 # adding proxy
 RUN export http_proxy=http://localhost:8118
 
