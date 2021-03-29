@@ -16,12 +16,12 @@ RUN apt install -y wget apt-utils
 # RUN echo "http_proxy=http://localhost:8118" >> /etc/wgetrc
 
 # Installing NVM
-RUN wget -qO- http://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash \
+RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash \
 && export NVM_DIR="$HOME/.nvm" \
 && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  \
 && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" \
-&& nvm install 13 \
-&& nvm use 13 \
+&& nvm install 14 \
+&& nvm use 14 \
 && npm config set registry http://registry.npmjs.org \
 && npm config set unsafe-perm true \
 && npm install -g @vue/cli \
